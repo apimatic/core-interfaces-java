@@ -4,8 +4,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>apimatic</groupId>
-  <artifactId>core-interfaces</artifactId>
+  <groupId>io.apimatic.core</groupId>
+  <artifactId>interfaces</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <name>core-interfaces</name>
