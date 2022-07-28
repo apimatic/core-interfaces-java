@@ -3,7 +3,13 @@ package io.apimatic.core.interfaces;
 public class App {
 
     /**
+     * Default constructor
+     */
+    public App() {}
+
+    /**
      * Execution of app starts from here.
+     * 
      * @param args The array of input arguments.
      */
     public static void main(final String[] args) {
