@@ -10,17 +10,14 @@ import junit.framework.TestSuite;
 public class AppTest extends TestCase {
     /**
      * Create the test case.
-     *
      * @param testName name of the test case
      */
-    public AppTest(String testName) {
-        
+    public AppTest(final String testName) {        
         super(testName);
     }
 
     /**
      * Setting up test suite.
-     * 
      * @return the suite of tests being tested
      */
     public static Test suite() {
