@@ -11,6 +11,6 @@ public class Program {
         methods.add(HttpMethod.HEAD);
         methods.add(HttpMethod.POST);
         
-        methods.forEach(httpMethod -> System.out.println(httpMethod.toString()));
+        //methods.forEach(httpMethod -> System.out.println(httpMethod.toString()));
     }
 }
