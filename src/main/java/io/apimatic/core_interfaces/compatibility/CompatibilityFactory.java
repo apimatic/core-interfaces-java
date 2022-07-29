@@ -29,4 +29,6 @@ public interface CompatibilityFactory {
     
     HttpHeaders createHttpHeaders(HttpHeaders headers);
     
+    Exception createApiException(String reason, HttpContext httpContext);
+    
 }
