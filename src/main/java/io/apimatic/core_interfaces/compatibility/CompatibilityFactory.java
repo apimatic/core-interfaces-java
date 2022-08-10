@@ -9,6 +9,7 @@ import io.apimatic.core_interfaces.http.HttpHeaders;
 import io.apimatic.core_interfaces.http.HttpMethod;
 import io.apimatic.core_interfaces.http.request.HttpRequest;
 import io.apimatic.core_interfaces.http.response.HttpResponse;
+import io.apimatic.core_interfaces.type.ApiException;
 
 public interface CompatibilityFactory {
 
@@ -29,6 +30,6 @@ public interface CompatibilityFactory {
     
     HttpHeaders createHttpHeaders(HttpHeaders headers);
     
-    Exception createApiException(String reason, HttpContext httpContext);
+    ApiException createApiException(String reason, HttpContext httpContext);
     
 }

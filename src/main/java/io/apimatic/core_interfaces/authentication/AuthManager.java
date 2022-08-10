@@ -1,4 +1,4 @@
-package io.apimatic.core_interface.authentication;
+package io.apimatic.core_interfaces.authentication;
 
 import io.apimatic.core_interfaces.http.request.HttpRequest;
 
