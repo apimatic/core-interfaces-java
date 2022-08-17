@@ -11,16 +11,18 @@ import io.apimatic.core_interfaces.http.HttpHeaders;
 /**
  * Class to wrap byteArray and headers to be sent as part of a multipart request.
  */
-public interface MultipartWrapper {
+public interface CoreMultipartWrapper {
 
     /**
      * Getter for bytes.
+     * 
      * @return Array of bytes.
      */
     public byte[] getByteArray();
 
     /**
      * Getter for headers.
+     * 
      * @return headers
      */
     public HttpHeaders getHeaders();

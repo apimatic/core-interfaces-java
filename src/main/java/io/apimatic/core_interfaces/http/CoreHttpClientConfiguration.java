@@ -2,7 +2,7 @@ package io.apimatic.core_interfaces.http;
 
 import java.util.Set;
 
-public interface HttpClientConfiguration {
+public interface CoreHttpClientConfiguration {
 
     /**
      * The timeout in seconds to use for making HTTP requests.
@@ -44,7 +44,7 @@ public interface HttpClientConfiguration {
      * 
      * @return a copy of httpMethodsToRetry
      */
-    Set<HttpMethod> getHttpMethodsToRetry();
+    Set<CoreHttpMethod> getHttpMethodsToRetry();
 
     /**
      * The maximum wait time for overall retrying requests.

@@ -4,16 +4,16 @@ import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 import java.util.Map;
 import io.apimatic.core_interfaces.http.HttpHeaders;
-import io.apimatic.core_interfaces.http.HttpMethod;
+import io.apimatic.core_interfaces.http.CoreHttpMethod;
 
-public interface HttpRequest {
-    
+public interface CoreHttpRequest {
+
     /**
      * HttpMethod for the http request.
      * 
      * @return HttpMethod
      */
-    public HttpMethod getHttpMethod();
+    public CoreHttpMethod getHttpMethod();
 
     /**
      * Headers for the http request.
@@ -29,8 +29,8 @@ public interface HttpRequest {
      */
     public String getQueryUrl();
 
-    public String getUrl();
-    
+    public String getUrl(ArraySerializationFormat arraySerializationFormat);
+
     /**
      * Parameters for the http request.
      * 
@@ -59,5 +59,5 @@ public interface HttpRequest {
      * @return Object body
      */
     public Object getBody();
-    
+
 }

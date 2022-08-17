@@ -8,5 +8,3 @@ public interface Deserializer<ResponseType> {
 }
 
 
-
-
