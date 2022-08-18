@@ -4,7 +4,7 @@ import io.apimatic.core_interfaces.http.request.ArraySerializationFormat;
 
 public interface CoreEndpointConfiguration {
 
-    RequestRetryConfiguration getRequestRetryConfiguration();
+    RetryOption getRetryOption();
 
     boolean hasBinaryResponse();
 
