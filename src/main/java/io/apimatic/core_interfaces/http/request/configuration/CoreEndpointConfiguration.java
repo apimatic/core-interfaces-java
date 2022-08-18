@@ -6,7 +6,7 @@ public interface CoreEndpointConfiguration {
 
     RequestRetryConfiguration getRequestRetryConfiguration();
 
-    boolean hasBinary();
+    boolean hasBinaryResponse();
 
     ArraySerializationFormat getArraySerializationFormat();
 }
