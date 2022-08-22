@@ -5,13 +5,11 @@ import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 import java.util.Map;
 import io.apimatic.core_interfaces.http.CoreHttpContext;
-import io.apimatic.core_interfaces.http.HttpHeaders;
 import io.apimatic.core_interfaces.http.CoreHttpMethod;
-import io.apimatic.core_interfaces.http.request.ArraySerializationFormat;
+import io.apimatic.core_interfaces.http.HttpHeaders;
 import io.apimatic.core_interfaces.http.request.CoreHttpRequest;
 import io.apimatic.core_interfaces.http.response.CoreHttpResponse;
 import io.apimatic.core_interfaces.http.response.DynamicType;
-import io.apimatic.core_interfaces.type.CoreApiException;
 
 public interface CompatibilityFactory {
 
@@ -33,8 +31,7 @@ public interface CompatibilityFactory {
 
     HttpHeaders createHttpHeaders(HttpHeaders headers);
 
-    CoreApiException createApiException(String reason, CoreHttpContext httpContext);
+    HttpHeaders createHttpHeaders();
 
     DynamicType createDynamicResponse(CoreHttpResponse httpResponse);
-
 }
