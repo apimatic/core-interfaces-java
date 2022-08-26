@@ -8,6 +8,7 @@ import io.apimatic.core_interfaces.http.CoreHttpContext;
 import io.apimatic.core_interfaces.http.CoreHttpMethod;
 import io.apimatic.core_interfaces.http.HttpHeaders;
 import io.apimatic.core_interfaces.http.request.CoreHttpRequest;
+import io.apimatic.core_interfaces.http.response.ApiResponseType;
 import io.apimatic.core_interfaces.http.response.CoreHttpResponse;
 import io.apimatic.core_interfaces.http.response.DynamicType;
 
@@ -34,4 +35,6 @@ public interface CompatibilityFactory {
     HttpHeaders createHttpHeaders();
 
     DynamicType createDynamicResponse(CoreHttpResponse httpResponse);
+    
+    <T> ApiResponseType<T> createAPiResponse(int statusCode, HttpHeaders headers, T result);
 }
