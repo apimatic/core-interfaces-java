@@ -1,9 +1,6 @@
 # core-interfaces-java
 This project contains the abstract layer for APIMatic's core-lib and Apimatic's JAVA SDK. 
 
-# core-interfaces-php
-Definition of the behavior of core-lib-php, unirest-php and Apimatic's PHP SDK.
-
 ## Interfaces
 | Name                                                                    | Description                                                        |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------|
