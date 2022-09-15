@@ -4,5 +4,10 @@ import io.apimatic.core_interfaces.http.request.Request;
 
 public interface Authentication {
 
+    /**
+     * Apply the authentication on the httpRequest
+     * @param httpRequest the request on which authentication is being applied
+     * @return the authenticated request
+     */
     Request apply(Request httpRequest);
 }
