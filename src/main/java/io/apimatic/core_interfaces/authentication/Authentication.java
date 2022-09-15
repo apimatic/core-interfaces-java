@@ -1,8 +1,8 @@
 package io.apimatic.core_interfaces.authentication;
 
-import io.apimatic.core_interfaces.http.request.CoreHttpRequest;
+import io.apimatic.core_interfaces.http.request.Request;
 
 public interface Authentication {
 
-    CoreHttpRequest apply(CoreHttpRequest httpRequest);
+    Request apply(Request httpRequest);
 }

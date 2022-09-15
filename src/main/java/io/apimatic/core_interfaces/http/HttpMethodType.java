@@ -9,7 +9,7 @@ package io.apimatic.core_interfaces.http;
 /**
  * HTTP methods enumeration.
  */
-public enum HttpMethodType implements CoreHttpMethod {
+public enum HttpMethodType implements Method {
     GET,
     POST,
     PUT,

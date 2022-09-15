@@ -4,16 +4,16 @@ import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 import java.util.Map;
 import io.apimatic.core_interfaces.http.HttpHeaders;
-import io.apimatic.core_interfaces.http.CoreHttpMethod;
+import io.apimatic.core_interfaces.http.Method;
 
-public interface CoreHttpRequest {
+public interface Request {
 
     /**
      * HttpMethod for the http request.
      * 
      * @return HttpMethod
      */
-    public CoreHttpMethod getHttpMethod();
+    public Method getHttpMethod();
 
     /**
      * Headers for the http request.

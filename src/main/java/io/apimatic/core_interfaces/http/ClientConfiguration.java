@@ -2,7 +2,7 @@ package io.apimatic.core_interfaces.http;
 
 import java.util.Set;
 
-public interface CoreHttpClientConfiguration {
+public interface ClientConfiguration {
 
     /**
      * The timeout in seconds to use for making HTTP requests.
@@ -44,7 +44,7 @@ public interface CoreHttpClientConfiguration {
      * 
      * @return a copy of httpMethodsToRetry
      */
-    Set<CoreHttpMethod> getHttpMethodsToRetry();
+    Set<Method> getHttpMethodsToRetry();
 
     /**
      * The maximum wait time for overall retrying requests.
@@ -74,4 +74,11 @@ public interface CoreHttpClientConfiguration {
      * @return a copy of overrideHttpClientConfigurations
      */
     boolean shouldOverrideHttpClientConfigurations();
+    
+    /**
+     * Allow or prevent skipping SSL certificate verification.
+     * 
+     * @return a copy of skipSslCertVerification
+     */
+    boolean skipSslCertVerification();
 }

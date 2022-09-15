@@ -3,7 +3,7 @@ package io.apimatic.core_interfaces.http.response;
 import java.io.InputStream;
 import io.apimatic.core_interfaces.http.HttpHeaders;
 
-public interface CoreHttpResponse {
+public interface Response {
 
     /**
      * HTTP Status code of the http response.

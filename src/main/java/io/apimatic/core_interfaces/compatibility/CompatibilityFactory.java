@@ -4,28 +4,28 @@ import java.io.InputStream;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 import java.util.Map;
-import io.apimatic.core_interfaces.http.CoreHttpContext;
-import io.apimatic.core_interfaces.http.CoreHttpMethod;
+import io.apimatic.core_interfaces.http.Context;
+import io.apimatic.core_interfaces.http.Method;
 import io.apimatic.core_interfaces.http.HttpHeaders;
-import io.apimatic.core_interfaces.http.request.CoreHttpRequest;
+import io.apimatic.core_interfaces.http.request.Request;
 import io.apimatic.core_interfaces.http.response.ApiResponseType;
-import io.apimatic.core_interfaces.http.response.CoreHttpResponse;
+import io.apimatic.core_interfaces.http.response.Response;
 import io.apimatic.core_interfaces.http.response.DynamicType;
 
 public interface CompatibilityFactory {
 
-    CoreHttpContext createHttpContext(CoreHttpRequest request, CoreHttpResponse response);
+    Context createHttpContext(Request request, Response response);
 
-    CoreHttpRequest createHttpRequest(CoreHttpMethod httpMethod, StringBuilder queryUrlBuilder,
+    Request createHttpRequest(Method httpMethod, StringBuilder queryUrlBuilder,
             HttpHeaders headers, Map<String, Object> queryParameters,
             List<SimpleEntry<String, Object>> formParameters);
 
-    CoreHttpRequest createHttpRequest(CoreHttpMethod httpMethod, StringBuilder queryUrlBuilder,
+    Request createHttpRequest(Method httpMethod, StringBuilder queryUrlBuilder,
             HttpHeaders headers, Map<String, Object> queryParameters, Object body);
 
-    CoreHttpResponse createHttpResponse(int code, HttpHeaders headers, InputStream rawBody);
+    Response createHttpResponse(int code, HttpHeaders headers, InputStream rawBody);
 
-    CoreHttpResponse createHttpResponse(int code, HttpHeaders headers, InputStream rawBody,
+    Response createHttpResponse(int code, HttpHeaders headers, InputStream rawBody,
             String body);
 
     HttpHeaders createHttpHeaders(Map<String, List<String>> headers);
@@ -34,7 +34,7 @@ public interface CompatibilityFactory {
 
     HttpHeaders createHttpHeaders();
 
-    DynamicType createDynamicResponse(CoreHttpResponse httpResponse);
+    DynamicType createDynamicResponse(Response httpResponse);
     
     <T> ApiResponseType<T> createAPiResponse(int statusCode, HttpHeaders headers, T result);
 }
