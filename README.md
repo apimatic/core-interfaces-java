@@ -4,7 +4,7 @@ This project contains the abstract layer for APIMatic's core-lib and Apimatic's 
 ## Interfaces
 | Name                                                                    | Description                                                        |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [`Context`](src\main\java\io\apimatic\core_interfaces\http/Context.java)                     | To save both Request and Response after the completion of response |
+| [`Context`](/src/main/java/io/apimatic/core_interfaces/http/Context.java)                     | To save both Request and Response after the completion of response |
 | [`HttpCallback`](src\main\java\io\apimatic\core_interfaces\http\HttpCallback.java)                     | To perform action before Request and after the completion of response |
 | [`HttpClient`](src\main\java\io\apimatic\core_interfaces\http\HttpClient.java)                     | To provide abstraction to execute API call in HttpClient |
 | [`HttpHeaders`](src\main\java\io\apimatic\core_interfaces\http\HttpHeaders.java)                     | To save additional information about the request and response |
