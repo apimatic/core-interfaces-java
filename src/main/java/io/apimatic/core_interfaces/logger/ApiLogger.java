@@ -1,9 +1,9 @@
-package io.apimatic.core_interfaces.http.logger;
+package io.apimatic.core_interfaces.logger;
 
 import io.apimatic.core_interfaces.http.request.Request;
 import io.apimatic.core_interfaces.http.response.Response;
 
-public interface HttpApiLogger {
+public interface ApiLogger {
 
     /**
      * Log requests.
