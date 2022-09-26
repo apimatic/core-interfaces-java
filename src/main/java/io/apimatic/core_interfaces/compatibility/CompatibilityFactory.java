@@ -36,5 +36,5 @@ public interface CompatibilityFactory {
 
     DynamicType createDynamicResponse(Response httpResponse);
     
-    <T> ApiResponseType<T> createAPiResponse(int statusCode, HttpHeaders headers, T result);
+    <T> ApiResponseType<T> createApiResponse(int statusCode, HttpHeaders headers, T result);
 }
