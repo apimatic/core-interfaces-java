@@ -1,7 +1,7 @@
 package io.apimatic.coreinterfaces.http.request;
 
 import io.apimatic.coreinterfaces.http.HttpHeaders;
-import io.apimatic.coreinterfaces.type.FileWrapper;
+import io.apimatic.coreinterfaces.type.CoreFileWrapper;
 
 /**
  * Interface to wrap file and headers to be sent as part of a multipart request.
@@ -13,7 +13,7 @@ public interface MultipartFile {
      * 
      * @return FileWrapper instance
      */
-    public FileWrapper getFileWrapper();
+    public CoreFileWrapper getFileWrapper();
 
     /**
      * Getter for headers.

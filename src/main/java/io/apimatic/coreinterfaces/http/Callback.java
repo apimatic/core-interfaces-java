@@ -2,7 +2,7 @@ package io.apimatic.coreinterfaces.http;
 
 import io.apimatic.coreinterfaces.http.request.Request;
 
-public interface HttpCallback {
+public interface Callback {
 
     /**
      * Callback called just before the HTTP request is sent.

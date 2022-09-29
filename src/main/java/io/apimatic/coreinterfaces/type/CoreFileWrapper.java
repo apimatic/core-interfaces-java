@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * Class to wrap file and contentType to be sent as part of a HTTP request.
  */
-public interface FileWrapper {
+public interface CoreFileWrapper {
 
     /**
      * Getter for file.
