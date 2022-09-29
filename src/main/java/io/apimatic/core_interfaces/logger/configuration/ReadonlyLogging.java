@@ -6,7 +6,7 @@ import io.apimatic.core_interfaces.http.LoggingPolicy;
 /**
  * Interface for holding logging configuration.
  */
-public interface ReadonlyLoggingConfiguration {
+public interface ReadonlyLogging {
 
     /**
      * Is logging request info enabled.

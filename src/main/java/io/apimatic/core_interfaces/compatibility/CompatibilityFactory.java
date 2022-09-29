@@ -12,6 +12,10 @@ import io.apimatic.core_interfaces.http.response.ApiResponseType;
 import io.apimatic.core_interfaces.http.response.Response;
 import io.apimatic.core_interfaces.http.response.DynamicType;
 
+/**
+ * For the backward compatibility 
+ *
+ */
 public interface CompatibilityFactory {
 
     Context createHttpContext(Request request, Response response);

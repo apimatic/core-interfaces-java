@@ -1,5 +1,9 @@
 package io.apimatic.core_interfaces.http;
 
+/**
+ * Enumeration Containing HttpMethods
+ *
+ */
 public interface Method {
     final Method GET = HttpMethodType.GET;
     final Method POST = HttpMethodType.POST;
