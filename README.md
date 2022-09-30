@@ -5,7 +5,7 @@ This project contains the abstract layer for APIMatic's core library and Apimati
 * The JRE flavor requires `JDK 1.8`.
 ## Install the maven package
 Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-interfaces`.
-To add a dependency on core library using Maven, use the following:
+To add a dependency on core interfaces using Maven, use the following:
 ```java
 <dependency>
     <groupId>io.apimatic</groupId>
