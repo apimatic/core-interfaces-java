@@ -26,7 +26,7 @@ public interface HttpClient {
      * Execute a given Request to get string/binary response back.
      * 
      * @param request The given Request to execute.
-     * @param retryConfiguration The overridden retry configuration for request.
+     * @param endpointConfiguration The overridden configuration for request.
      * @return The converted response.
      * @throws IOException exception to be thrown while converting response.
      */

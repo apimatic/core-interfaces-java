@@ -13,7 +13,7 @@ public interface Serializer {
      * 
      * @param responseData the function for serialization
      * @return the serialized string
-     * @throws IOException
+     * @throws IOException Exception to be thrown while applying the function.
      */
     String apply(Object responseData) throws IOException;
 }
