@@ -2,7 +2,11 @@ package io.apimatic.coreinterfaces.http.response;
 
 import io.apimatic.coreinterfaces.http.HttpHeaders;
 
-
+/**
+ * Complete Http Reponse Type
+ *
+ * @param <T> the underneath Type 
+ */
 public interface ApiResponseType<T> {
 
     /**

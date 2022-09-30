@@ -1,7 +1,9 @@
 package io.apimatic.coreinterfaces.http;
 
 import io.apimatic.coreinterfaces.http.request.Request;
-
+/**
+ * An Callback that captures the request and response for use later.
+ */
 public interface Callback {
 
     /**

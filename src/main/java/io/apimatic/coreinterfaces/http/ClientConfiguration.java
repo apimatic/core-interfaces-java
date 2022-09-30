@@ -2,6 +2,10 @@ package io.apimatic.coreinterfaces.http;
 
 import java.util.Set;
 
+/**
+ * Interface to hold HTTP Client Configuration.
+ *
+ */
 public interface ClientConfiguration {
 
     /**

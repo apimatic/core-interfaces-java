@@ -3,6 +3,10 @@ package io.apimatic.coreinterfaces.http.response;
 import java.io.InputStream;
 import io.apimatic.coreinterfaces.http.HttpHeaders;
 
+/**
+ * To hold HTTP Response.
+ *
+ */
 public interface Response {
 
     /**

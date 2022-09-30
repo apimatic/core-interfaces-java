@@ -5,6 +5,11 @@ import java.text.ParseException;
 import java.util.Map;
 import io.apimatic.coreinterfaces.http.HttpHeaders;
 
+
+/**
+ * Represents dynamic response returned by an API call.
+ * 
+ */
 public interface DynamicType {
 
     /**

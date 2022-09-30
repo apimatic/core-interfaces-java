@@ -4,6 +4,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * For creating and managing HTTP Headers.
+ *
+ */
 public interface HttpHeaders {
 
     /**

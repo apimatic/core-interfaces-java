@@ -3,8 +3,9 @@ package io.apimatic.coreinterfaces.logger.configuration;
 import java.util.Set;
 import io.apimatic.coreinterfaces.http.LoggingLevel;
 import io.apimatic.coreinterfaces.http.LoggingPolicy;
+
 /**
- * Interface for holding logging configuration.
+ * To hold logging configuration
  */
 public interface ReadonlyLogging {
 

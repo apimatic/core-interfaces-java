@@ -6,6 +6,10 @@ import io.apimatic.coreinterfaces.http.Method;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * To create and manage HTTP Requests.
+ *
+ */
 public interface Request {
 
     /**

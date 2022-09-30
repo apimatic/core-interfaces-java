@@ -2,6 +2,11 @@ package io.apimatic.coreinterfaces.type.functional;
 
 import java.io.IOException;
 
+/**
+ * Functional Interface to apply the deserializer function
+ *
+ * @param <ResponseType>
+ */
 @FunctionalInterface
 public interface Deserializer<ResponseType> {
     /**

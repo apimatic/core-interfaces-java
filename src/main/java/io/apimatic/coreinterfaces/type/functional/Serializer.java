@@ -2,6 +2,10 @@ package io.apimatic.coreinterfaces.type.functional;
 
 import java.io.IOException;
 
+/**
+ * Functional Interface to apply the serializer function
+ *
+ */
 @FunctionalInterface
 public interface Serializer {
     /**

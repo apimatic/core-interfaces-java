@@ -2,6 +2,11 @@ package io.apimatic.coreinterfaces.type.functional;
 
 import io.apimatic.coreinterfaces.http.Context;
 
+/**
+ * Functional interface to create the SDK Exception
+ *
+ * @param <T>
+ */
 @FunctionalInterface
 public interface ExceptionCreator<T> {
     /**

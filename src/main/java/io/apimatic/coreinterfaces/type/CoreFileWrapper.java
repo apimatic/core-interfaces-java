@@ -3,7 +3,7 @@ package io.apimatic.coreinterfaces.type;
 import java.io.File;
 
 /**
- * Class to wrap file and contentType to be sent as part of a HTTP request.
+ * To wrap file and contentType to be sent as part of a HTTP request.
  */
 public interface CoreFileWrapper {
 

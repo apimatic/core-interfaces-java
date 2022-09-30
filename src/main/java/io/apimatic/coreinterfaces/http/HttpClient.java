@@ -3,11 +3,11 @@ package io.apimatic.coreinterfaces.http;
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 import io.apimatic.coreinterfaces.http.request.Request;
-import io.apimatic.coreinterfaces.http.request.configuration.EndpointSetting;
+import io.apimatic.coreinterfaces.http.request.configuration.CoreEndpointConfiguration;
 import io.apimatic.coreinterfaces.http.response.Response;
 
 /**
- * HTTP Client interface to send HTTP Requests and read the responses.
+ * To send HTTP Requests and read the responses.
  *
  */
 public interface HttpClient {
@@ -20,7 +20,7 @@ public interface HttpClient {
      * @return CompletableFuture of Response after execution.
      */
     public CompletableFuture<Response> executeAsync(final Request request,
-            EndpointSetting endpointConfiguration);
+            CoreEndpointConfiguration endpointConfiguration);
 
     /**
      * Execute a given Request to get string/binary response back.
@@ -30,6 +30,6 @@ public interface HttpClient {
      * @return The converted response.
      * @throws IOException exception to be thrown while converting response.
      */
-    public Response execute(final Request request, EndpointSetting endpointConfiguration)
+    public Response execute(final Request request, CoreEndpointConfiguration endpointConfiguration)
             throws IOException;
 }
