@@ -1,4 +1,4 @@
-package apimatic.core_interfaces;
+package apimatic.coreinterfaces;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
