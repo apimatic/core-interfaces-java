@@ -1,4 +1,7 @@
-# core-interfaces-java
+# APIMatic JAVA Core Library Interfaces
+
+[![Licence][license-badge]][license-url]
+## Introduction
 This project contains the abstract layer for APIMatic's core library and Apimatic's JAVA SDK. 
 
 ## Prerequisites
@@ -10,7 +13,7 @@ To add a dependency on core interfaces using Maven, use the following:
 <dependency>
     <groupId>io.apimatic</groupId>
     <artifactId>core-interfaces</artifactId>
-    <version>{version}</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -51,3 +54,6 @@ To add a dependency on core interfaces using Maven, use the following:
 | [`HeaderLoggingPolicyLevel`](./src/main/java/io/apimatic/coreinterfaces/http/HeaderLoggingPolicyLevel.java)                     | Enumeration of Header Logging ploicy  |
 | [`LoggingLevel`](./src/main/java/io/apimatic/coreinterfaces/http/LoggingLevel.java)                     | Enumeration of all the possible Logging Level  |
 | [`LoggingLevelType`](./src/main/java/io/apimatic/coreinterfaces/http/LoggingLevelType.java)                     | Enumeration of Logging Level  |
+
+[license-badge]: https://img.shields.io/badge/licence-APIMATIC-blue
+[license-url]: LICENSE
