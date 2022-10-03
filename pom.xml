@@ -10,7 +10,7 @@
 	<version>0.1.0</version>
 
 	<name>core-interfaces</name>
-	<description>An abstract layer of the functionalities provided by apimatic-core-library and okhttp-client-adapter and an APIMatic SDK.</description>
+	<description>An abstract layer of the functionalities provided by apimatic-core-library, okhttp-client-adapter and APIMatic SDKs.</description>
 	<url>https://github.com/apimatic/core-interfaces-java</url>
 
 	<properties>
