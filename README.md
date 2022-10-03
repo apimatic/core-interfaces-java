@@ -1,5 +1,5 @@
 # APIMatic JAVA Core Library Interfaces
-
+[![Maven Central][maven-badge]][maven-url]
 [![Licence][license-badge]][license-url]
 ## Introduction
 This project contains the abstract layer for APIMatic's core library and Apimatic's JAVA SDK. 
@@ -57,3 +57,5 @@ To add a dependency on core interfaces using Maven, use the following:
 
 [license-badge]: https://img.shields.io/badge/licence-APIMATIC-blue
 [license-url]: LICENSE
+[maven-badge]: https://img.shields.io/maven-central/v/io.apimatic/core-interfaces?color=green
+[maven-url]: https://central.sonatype.dev/artifact/io.apimatic/core-interfaces/0.1.0
