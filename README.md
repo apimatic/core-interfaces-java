@@ -13,7 +13,7 @@ To add a dependency on core interfaces using Maven, use the following:
 <dependency>
     <groupId>io.apimatic</groupId>
     <artifactId>core-interfaces</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 </dependency>
 ```
 
@@ -58,4 +58,4 @@ To add a dependency on core interfaces using Maven, use the following:
 [license-badge]: https://img.shields.io/badge/licence-APIMATIC-blue
 [license-url]: LICENSE
 [maven-badge]: https://img.shields.io/maven-central/v/io.apimatic/core-interfaces?color=green
-[maven-url]: https://central.sonatype.dev/artifact/io.apimatic/core-interfaces/0.1.0
+[maven-url]: https://central.sonatype.dev/artifact/io.apimatic/core-interfaces/0.1.1
