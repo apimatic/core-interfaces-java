@@ -15,4 +15,9 @@ public interface Authentication {
      * @return the authenticated request
      */
     Request apply(Request httpRequest);
+    
+    /**
+     * Validates the auth params for the httpRequest
+     */
+    void validate();
 }
