@@ -17,7 +17,7 @@ public interface Authentication {
     Request apply(Request httpRequest);
     
     /**
-     * Validate the authentication on the httpRequest
+     * Validates the auth params for the httpRequest
      */
     void validate();
 }
