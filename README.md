@@ -14,7 +14,7 @@ To add a dependency on core interfaces using Maven, use the following:
 <dependency>
     <groupId>io.apimatic</groupId>
     <artifactId>core-interfaces</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 </dependency>
 ```
 
