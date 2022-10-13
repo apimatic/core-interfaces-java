@@ -5,5 +5,5 @@ package io.apimatic.coreinterfaces.http.request;
  *
  */
 public enum ResponseClassType {
-    API_RESPONSE, DYNAMIC_RESPONSE
+    API_RESPONSE, DYNAMIC_RESPONSE, DYNAMIC_API_RESPONSE
 }
