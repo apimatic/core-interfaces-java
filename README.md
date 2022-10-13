@@ -42,7 +42,7 @@ To add a dependency on core interfaces using Maven, use the following:
 | [`Deserializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Deserializer.java)                  | Functional interface to  apply the deserialization function           |
 | [`ExceptionCreator`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ExceptionCreator.java)                  | Functional interface to  create the SDK exception             |
 | [`Serializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Serializer.java)                  | Functional interface to  apply the serialization function              |
-| [`ContextInitializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ContextInitializer.java)                  | Functional interface to  apply the context initialization function              |
+| [`ContextInitializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ContextInitializer.java)                  | Functional Interface to apply the context initialization function for the response models             |
 
 ## Enumerations
 | Name                                                                          | Description                                                     |
