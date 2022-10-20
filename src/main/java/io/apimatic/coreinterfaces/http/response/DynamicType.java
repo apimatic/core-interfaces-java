@@ -90,9 +90,8 @@ public interface DynamicType {
      * Parse response as string.
      * 
      * @return Parsed value
-     * @throws ParseException Signals if a parse exception occured
      */
-    String parseAsString() throws ParseException;
+    String parseAsString();
 
     /**
      * Parse response as a map of keys and values.
