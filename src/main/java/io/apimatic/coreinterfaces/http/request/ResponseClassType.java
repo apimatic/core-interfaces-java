@@ -5,15 +5,15 @@ package io.apimatic.coreinterfaces.http.request;
  */
 public enum ResponseClassType {
     /**
-     * Response type should be {@link ApiResponseType}
+     * Response type should be ApiResponseType
      */
     API_RESPONSE,
     /**
-     * Response type should be {@link DynamicType}
+     * Response type should be DynamicType
      */
     DYNAMIC_RESPONSE,
     /**
-     * Response type {@link ApiResponseType} encapsulates the {@link DynamicType}
+     * Response type ApiResponseType encapsulates the DynamicType
      */
     DYNAMIC_API_RESPONSE
 }
