@@ -17,7 +17,7 @@ public interface HttpClient {
      * @param endpointConfiguration The overridden configuration for request.
      * @return CompletableFuture of Response after execution.
      */
-    CompletableFuture<Response> executeAsync(final Request request,
+    CompletableFuture<Response> executeAsync(Request request,
             CoreEndpointConfiguration endpointConfiguration);
 
     /**
@@ -27,6 +27,6 @@ public interface HttpClient {
      * @return The converted response.
      * @throws IOException exception to be thrown while converting response.
      */
-    Response execute(final Request request, CoreEndpointConfiguration endpointConfiguration)
+    Response execute(Request request, CoreEndpointConfiguration endpointConfiguration)
             throws IOException;
 }

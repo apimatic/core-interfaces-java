@@ -1,8 +1,5 @@
 package io.apimatic.coreinterfaces.http.request;
 
-import io.apimatic.coreinterfaces.http.response.ApiResponseType;
-import io.apimatic.coreinterfaces.http.response.DynamicType;
-
 /**
  * Enumeration for the Response class types
  */

@@ -44,7 +44,7 @@ public interface CompatibilityFactory {
      * @param headers The request {@link HttpHeaders}
      * @param queryParameters Map of query parameters
      * @param body The request body
-     * @return
+     * @return {@link Request}
      */
     Request createHttpRequest(Method httpMethod, StringBuilder queryUrlBuilder, HttpHeaders headers,
             Map<String, Object> queryParameters, Object body);

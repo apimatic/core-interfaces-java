@@ -7,27 +7,27 @@ public interface Method {
     /**
      * Get Http Method
      */
-    final Method GET = HttpMethodType.GET;
+    Method GET = HttpMethodType.GET;
     /**
      * Post Http Method
      */
-    final Method POST = HttpMethodType.POST;
+    Method POST = HttpMethodType.POST;
     /**
      * Put Http Method
      */
-    final Method PUT = HttpMethodType.PUT;
+    Method PUT = HttpMethodType.PUT;
     /**
      * Patch Http Method
      */
-    final Method PATCH = HttpMethodType.PATCH;
+    Method PATCH = HttpMethodType.PATCH;
     /**
      * Get Delete Method
      */
-    final Method DELETE = HttpMethodType.DELETE;
+    Method DELETE = HttpMethodType.DELETE;
     /**
      * Head Http Method
      */
-    final Method HEAD = HttpMethodType.HEAD;
+    Method HEAD = HttpMethodType.HEAD;
 }
 
 

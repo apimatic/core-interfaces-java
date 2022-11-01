@@ -22,7 +22,10 @@ public enum RetryOption {
 
     private final String value;
 
-    RetryOption(String value) {
+    /**
+     * @param value RetryOption string value
+     */
+    RetryOption(final String value) {
         this.value = value;
     }
 
@@ -40,9 +43,9 @@ public enum RetryOption {
             case DISABLE:
                 return false;
             case DEFAULT:
+            default:
                 return isWhitelistedRequestMethod;
         }
-        return isWhitelistedRequestMethod;
     }
 
 }
