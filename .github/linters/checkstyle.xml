@@ -193,6 +193,8 @@
     <module name="ArrayTypeStyle"/>
     <module name="FinalParameters"/>
       <property name="tokens" value="CTOR_DEF"/>
+      <property name="ignorePrimitiveTypes" value="true"/>
+    </module>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
 
