@@ -191,7 +191,7 @@
     <!-- Miscellaneous other checks.                   -->
     <!-- See https://checkstyle.org/config_misc.html -->
     <module name="ArrayTypeStyle"/>
-    <module name="FinalParameters"/>
+    <module name="FinalParameters">
       <property name="tokens" value="CTOR_DEF"/>
       <property name="ignorePrimitiveTypes" value="true"/>
     </module>
