@@ -5,6 +5,13 @@ package io.apimatic.coreinterfaces.http;
  *
  */
 public interface LoggingPolicy {
+    /**
+     * Include Headers in logging
+     */
     final LoggingPolicy INCLUDE = HeaderLoggingPolicyLevel.INCLUDE;
+    
+    /**
+     * Exclude Headers in logging
+     */
     final LoggingPolicy EXCLUDE = HeaderLoggingPolicyLevel.EXCLUDE;
 }

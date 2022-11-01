@@ -28,7 +28,6 @@ public enum RetryOption {
 
     /**
      * Determines whether retrying for the request is allowed or not.
-     * 
      * @param isWhitelistedRequestMethod flag if the global list of HTTP method contains the request
      *        method.
      * @return True if retrying for the request is allowed.

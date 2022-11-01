@@ -9,15 +9,13 @@ public interface Multipart {
 
     /**
      * Getter for bytes.
-     * 
      * @return Array of bytes.
      */
-    public byte[] getByteArray();
+    byte[] getByteArray();
 
     /**
      * Getter for headers.
-     * 
      * @return headers
      */
-    public HttpHeaders getHeaders();
+    HttpHeaders getHeaders();
 }
