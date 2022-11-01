@@ -20,6 +20,9 @@ public enum RetryOption {
      */
     DEFAULT("DEFAULT");
 
+    /**
+     * Retry option value string
+     */
     private final String value;
 
     /**
