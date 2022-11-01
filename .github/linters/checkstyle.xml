@@ -169,7 +169,9 @@
     <!-- See https://checkstyle.org/config_coding.html -->
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
-    <module name="HiddenField"/>
+    <module name="HiddenField">
+      <property name="tokens" value="VARIABLE_DEF"/>
+    </module>
     <module name="IllegalInstantiation"/>
     <module name="InnerAssignment"/>
     <module name="MagicNumber"/>
@@ -190,6 +192,8 @@
     <!-- See https://checkstyle.org/config_misc.html -->
     <module name="ArrayTypeStyle"/>
     <module name="FinalParameters"/>
+      <property name="tokens" value="CTOR_DEF"/>
+      <property name="ignorePrimitiveTypes" value="true"/>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
 
