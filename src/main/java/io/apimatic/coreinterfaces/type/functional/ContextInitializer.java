@@ -1,6 +1,5 @@
 package io.apimatic.coreinterfaces.type.functional;
 
-import java.io.IOException;
 import io.apimatic.coreinterfaces.http.Context;
 
 
