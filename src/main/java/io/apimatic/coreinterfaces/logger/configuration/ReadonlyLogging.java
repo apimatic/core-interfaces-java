@@ -13,59 +13,59 @@ public interface ReadonlyLogging {
      * Is logging request info enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isLoggingRequestInfo();
+    boolean isLoggingRequestInfo();
 
     /**
      * Is logging response info enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isLoggingResponseInfo();
+    boolean isLoggingResponseInfo();
 
     /**
      * Is logging request headers enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isLoggingRequestHeaders();
+    boolean isLoggingRequestHeaders();
 
     /**
      * Is logging response headers enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isLoggingResponseHeaders();
+    boolean isLoggingResponseHeaders();
 
     /**
      * Is logging request body enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isLoggingRequestBody();
+    boolean isLoggingRequestBody();
 
     /**
      * Is logging response body enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isLoggingResponseBody();
+    boolean isLoggingResponseBody();
 
     /**
      * Is pretty printing log message enabled.
      * @return true if enabled, false otherwise.
      */
-    public boolean isPrettyPrinting();
+    boolean isPrettyPrinting();
 
     /**
      * Getter for level.
      * @return Level of logging.
      */
-    public LoggingLevel getLevel();
+    LoggingLevel getLevel();
 
     /**
      * Getter for header logging policy.
      * @return Logging policy for headers.
      */
-    public LoggingPolicy getHeaderLoggingPolicy();
+    LoggingPolicy getHeaderLoggingPolicy();
 
     /**
      * Getter for headers' filters.
      * @return Set of string headers to filter.
      */
-    public Set<String> getHeaderFilters();
+    Set<String> getHeaderFilters();
 }

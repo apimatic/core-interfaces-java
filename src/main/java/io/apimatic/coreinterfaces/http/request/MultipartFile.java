@@ -10,15 +10,13 @@ public interface MultipartFile {
 
     /**
      * Getter for file wrapper.
-     * 
      * @return FileWrapper instance
      */
-    public CoreFileWrapper getFileWrapper();
+    CoreFileWrapper getFileWrapper();
 
     /**
      * Getter for headers.
-     * 
      * @return Headers
      */
-    public HttpHeaders getHeaders();
+    HttpHeaders getHeaders();
 }

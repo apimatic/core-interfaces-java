@@ -8,28 +8,25 @@ import io.apimatic.coreinterfaces.http.response.Response;
 
 /**
  * To send HTTP Requests and read the responses.
- *
  */
 public interface HttpClient {
 
     /**
      * Execute a given Request to get string/binary response back.
-     * 
      * @param request The given HttpRequest to execute.
      * @param endpointConfiguration The overridden configuration for request.
      * @return CompletableFuture of Response after execution.
      */
-    public CompletableFuture<Response> executeAsync(final Request request,
+    CompletableFuture<Response> executeAsync(Request request,
             CoreEndpointConfiguration endpointConfiguration);
 
     /**
      * Execute a given Request to get string/binary response back.
-     * 
      * @param request The given Request to execute.
      * @param endpointConfiguration The overridden configuration for request.
      * @return The converted response.
      * @throws IOException exception to be thrown while converting response.
      */
-    public Response execute(final Request request, CoreEndpointConfiguration endpointConfiguration)
+    Response execute(Request request, CoreEndpointConfiguration endpointConfiguration)
             throws IOException;
 }
