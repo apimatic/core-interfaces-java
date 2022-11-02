@@ -3,6 +3,7 @@
           "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
           "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
+
 <!--
 
   Checkstyle configuration that checks the sun coding conventions from:
@@ -54,6 +55,20 @@
     <property name="file" value="${org.checkstyle.sun.suppressionfilter.config}" default="checkstyle-suppressions.xml" />
     <property name="optional" value="true"/>
   </module>
+
+  <module name="SuppressionSingleFilter">
+  <property name="checks" value="InterfaceIsType"/>
+  <property name="files" value="LoggingLevel.java"/>
+  </module>
+  <module name="SuppressionSingleFilter">
+    <property name="checks" value="InterfaceIsType"/>
+    <property name="files" value="LoggingPolicy.java"/>
+  </module>
+  <module name="SuppressionSingleFilter">
+    <property name="checks" value="InterfaceIsType"/>
+    <property name="files" value="Method.java"/>
+  </module>
+        
 
   <!-- Checks that a package-info.java file exists for each package.     -->
   <!-- See https://checkstyle.org/config_javadoc.html#JavadocPackage -->
@@ -191,9 +206,10 @@
     <!-- Miscellaneous other checks.                   -->
     <!-- See https://checkstyle.org/config_misc.html -->
     <module name="ArrayTypeStyle"/>
-    <module name="FinalParameters"/>
+    <module name="FinalParameters">
       <property name="tokens" value="CTOR_DEF"/>
       <property name="ignorePrimitiveTypes" value="true"/>
+    </module>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
 

@@ -11,11 +11,11 @@ public interface CoreFileWrapper {
      * Getter for file.
      * @return File instance
      */
-    public File getFile();
+    File getFile();
 
     /**
      * Getter for content type.
      * @return content type of the file
      */
-    public String getContentType();
+    String getContentType();
 }
