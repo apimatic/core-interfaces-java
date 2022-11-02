@@ -5,13 +5,11 @@ import io.apimatic.coreinterfaces.http.response.Response;
 
 /**
  * To log the useful information
- *
  */
 public interface ApiLogger {
 
     /**
      * Log requests.
-     * 
      * @param request HttpRequest to be logged.
      * @param url String request URL.
      */
@@ -19,7 +17,6 @@ public interface ApiLogger {
 
     /**
      * Log requests.
-     * 
      * @param request HttpRequest to be logged.
      * @param url String request URL.
      * @param additionalMessage Any additional message to be logged.
@@ -28,7 +25,6 @@ public interface ApiLogger {
 
     /**
      * Set error for failed requests.
-     * 
      * @param request HttpRequest that failed.
      * @param error Throwable occurred.
      */
@@ -36,7 +32,6 @@ public interface ApiLogger {
 
     /**
      * Log Responses.
-     * 
      * @param request HttpRequest that completed.
      * @param response HttpResponse to be logged.
      */
@@ -44,7 +39,6 @@ public interface ApiLogger {
 
     /**
      * Log Responses.
-     * 
      * @param request HttpRequest that completed.
      * @param response HttpResponse to be logged.
      * @param additionalMessage Any additional message to be logged.

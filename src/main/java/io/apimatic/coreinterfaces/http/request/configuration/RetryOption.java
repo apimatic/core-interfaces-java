@@ -20,15 +20,20 @@ public enum RetryOption {
      */
     DEFAULT("DEFAULT");
 
+    /**
+     * Retry option value string
+     */
     private final String value;
 
-    RetryOption(String value) {
+    /**
+     * @param value RetryOption string value
+     */
+    RetryOption(final String value) {
         this.value = value;
     }
 
     /**
      * Determines whether retrying for the request is allowed or not.
-     * 
      * @param isWhitelistedRequestMethod flag if the global list of HTTP method contains the request
      *        method.
      * @return True if retrying for the request is allowed.
@@ -41,9 +46,9 @@ public enum RetryOption {
             case DISABLE:
                 return false;
             case DEFAULT:
+            default:
                 return isWhitelistedRequestMethod;
         }
-        return isWhitelistedRequestMethod;
     }
 
 }
