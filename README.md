@@ -1,6 +1,8 @@
 # APIMatic JAVA Core Library Interfaces
 [![Maven Central][maven-badge]][maven-url]
 [![Tests][test-badge]][test-url]
+[![Lint Code][lint-badge]][lint-url]
+[![Maintainability][maintainability-url]][code-climate-url]
 [![Licence][license-badge]][license-url]
 ## Introduction
 This project contains the abstract layer for APIMatic's core library and Apimatic's JAVA SDK. 
@@ -63,3 +65,8 @@ To add a dependency on core interfaces using Maven, use the following:
 [maven-url]: https://central.sonatype.dev/artifact/io.apimatic/core-interfaces/0.1.1
 [test-badge]: https://github.com/apimatic/core-interfaces-java/actions/workflows/build-and-test.yml/badge.svg
 [test-url]: https://github.com/apimatic/core-interfaces-java/actions/workflows/build-and-test.yml
+[code-climate-url]: https://codeclimate.com/github/apimatic/core-interfaces-java
+[maintainability-url]: https://api.codeclimate.com/v1/badges/71332f9af318d309c3dc/maintainability
+[lint-badge]: https://github.com/apimatic/core-interfaces-java/actions/workflows/linter.yml/badge.svg
+[lint-url]: https://github.com/apimatic/core-interfaces-java/actions/workflows/linter.yml
+
