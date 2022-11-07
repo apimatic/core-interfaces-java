@@ -16,6 +16,9 @@ name: Lint Code Base
 #############################
 on:
   pull_request
+  push:
+    branches:
+      - main
 
 ###############
 # Set the Job #
