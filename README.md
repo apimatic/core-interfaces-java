@@ -51,7 +51,7 @@ Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-
 | [`LoggingLevel`](./src/main/java/io/apimatic/coreinterfaces/http/LoggingLevel.java)                     | Enumeration of all the possible Logging Level  |
 | [`LoggingLevelType`](./src/main/java/io/apimatic/coreinterfaces/http/LoggingLevelType.java)                     | Enumeration of Logging Level  |
 
-[license-badge]: https://img.shields.io/badge/licence-APIMATIC-blue
+[license-badge]: https://img.shields.io/badge/licence-MIT-blue
 [license-url]: LICENSE
 [maven-badge]: https://img.shields.io/maven-central/v/io.apimatic/core-interfaces?color=green
 [maven-url]: https://central.sonatype.dev/artifact/io.apimatic/core-interfaces/0.1.1
