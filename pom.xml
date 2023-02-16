@@ -7,7 +7,7 @@
 
 	<groupId>io.apimatic</groupId>
 	<artifactId>core-interfaces</artifactId>
-	<version>0.1.5</version>
+	<version>0.1.6</version>
 
 	<name>core-interfaces</name>
 	<description>An abstract layer of the functionalities provided by apimatic-core-library, okhttp-client-adapter and APIMatic SDKs.</description>
@@ -193,7 +193,7 @@
 
 	<licenses>
 		<license>
-			<name>APIMATIC REFERENCE SOURCE LICENSE</name>
+			<name>MIT License</name>
 			<url>https://github.com/apimatic/core-interfaces-java/blob/main/LICENSE</url>
 		</license>
 	</licenses>
