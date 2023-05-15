@@ -7,7 +7,7 @@
 
 	<groupId>io.apimatic</groupId>
 	<artifactId>core-interfaces</artifactId>
-	<version>0.1.6</version>
+	<version>0.1.7</version>
 
 	<name>core-interfaces</name>
 	<description>An abstract layer of the functionalities provided by apimatic-core-library, okhttp-client-adapter and APIMatic SDKs.</description>
