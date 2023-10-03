@@ -12,7 +12,7 @@ public abstract class Authentication {
      */
     private boolean isValid;
 
-	/**
+    /**
      * Stores the error message for the auth scheme.
      */
     private String errorMessage;
