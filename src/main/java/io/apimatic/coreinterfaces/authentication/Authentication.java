@@ -7,7 +7,7 @@ import io.apimatic.coreinterfaces.http.request.Request;
  */
 public abstract class Authentication {
 
-	/**
+    /**
      * Stores the validity of the auth scheme.
      */
     private boolean isValid;
