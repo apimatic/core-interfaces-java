@@ -18,20 +18,20 @@ public abstract class Authentication {
     private String errorMessage;
 
     /**
-     * Apply the authentication on the httpRequest.
+     * Applies the authentication on the httpRequest.
      * @param httpRequest the request on which authentication is being applied.
      * @return the authenticated request.
      */
     public abstract Request apply(Request httpRequest);
 
     /**
-     * Validates the auth params for the httpRequest.
+     * Validates the credentials for authentication.
      */
     public abstract void validate();
 
     /**
      * Checks if the auth credentials are valid.
-     * @return true if the auth credentials are valid.
+     * @return true if the auth credentials are valid, false otherwise.
      */
     public boolean isValid() {
         return isValid;
