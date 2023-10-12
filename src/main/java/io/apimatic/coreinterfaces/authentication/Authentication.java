@@ -8,6 +8,11 @@ import io.apimatic.coreinterfaces.http.request.Request;
 public abstract class Authentication {
 
     /**
+     * Stores the validity of the auth scheme.
+     */
+    private boolean isValid;
+
+    /**
      * Stores the error message for the auth scheme.
      */
     private String errorMessage;
@@ -21,13 +26,28 @@ public abstract class Authentication {
 
     /**
      * Validates the credentials for authentication.
+     */
+    public abstract void validate();
+
+    /**
+     * Checks if the auth credentials are valid.
      * @return true if the auth credentials are valid, false otherwise.
      */
-    public abstract boolean validate();
+    public boolean isValid() {
+        return isValid;
+    }
+
+    /**
+     * Sets the validatity of the auth credentials.
+     * @param isValid the flag to set for validity.
+     */
+    public void setValidity(boolean isValid) {
+        this.isValid = isValid;
+    }
 
     /**
      * Returns the error message if the auth credentials are not valid.
-     * @return The string message whenever the auth credentials are not valid.
+     * @return the string message whenever the auth credentials are not valid.
      */
     public String getErrorMessage() {
         return errorMessage;
