@@ -14,6 +14,6 @@ jobs:
         uses: slackapi/slack-github-action@v1.25.0
         with:
             channel-id: 'C012YFE3D6D'
-            slack-message: "core-lib-java release has been triggered!"
+            slack-message: "core-interfaces-java release has been triggered!"
         env:
             SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
