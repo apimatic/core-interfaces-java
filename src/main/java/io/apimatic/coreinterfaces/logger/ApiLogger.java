@@ -45,4 +45,18 @@ public interface ApiLogger {
      */
     void logResponse(Request request, Response response, String additionalMessage);
 
+    /**
+     * Adds a key-value pair to the context of the logger instance
+     * This can then be used by the logger anywhere.
+     * {@link #clearScope()} must be called after logging to avoid issues.
+     * @param key Key used to access the value. 
+     * @param val Value to be accessed.
+     */
+    void addToScope(String key, String val);
+
+
+    /**
+     * Clear all key-value pairs from the context of the logger instance.
+     */
+    void clearScope();
 }
