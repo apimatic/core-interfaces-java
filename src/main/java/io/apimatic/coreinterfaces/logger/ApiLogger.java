@@ -24,26 +24,11 @@ public interface ApiLogger {
     void logRequest(Request request, String url, String additionalMessage);
 
     /**
-     * Set error for failed requests.
-     * @param request HttpRequest that failed.
-     * @param error Throwable occurred.
-     */
-    void setError(Request request, Throwable error);
-
-    /**
      * Log Responses.
      * @param request HttpRequest that completed.
      * @param response HttpResponse to be logged.
      */
     void logResponse(Request request, Response response);
-
-    /**
-     * Log Responses.
-     * @param request HttpRequest that completed.
-     * @param response HttpResponse to be logged.
-     * @param additionalMessage Any additional message to be logged.
-     */
-    void logResponse(Request request, Response response, String additionalMessage);
 
     /**
      * Adds a key-value pair to the context of the logger instance
@@ -59,4 +44,11 @@ public interface ApiLogger {
      * Clear all key-value pairs from the context of the logger instance.
      */
     void clearScope();
+
+    /**
+     * Log error occurred on executing Request
+     * @param request HttpRequest to be logged.
+     * @param error Throwable occurred
+     */
+    void logRequestError(Request request, String url, Throwable error);
 }
