@@ -1,7 +1,5 @@
 package io.apimatic.coreinterfaces.logger;
 
-import java.util.Map;
-
 import io.apimatic.coreinterfaces.http.request.Request;
 import io.apimatic.coreinterfaces.http.response.Response;
 
@@ -31,22 +29,6 @@ public interface ApiLogger {
      * @param response HttpResponse to be logged.
      */
     void logResponse(Request request, Response response);
-
-    /**
-     * This should mark the start of the log scope.
-     * Call it before logging the request.
-     */
-    void startScope();
-
-    /**
-     * This should mark the end of the log scope.
-     * Call it after logging the response.
-     */
-    void closeScope();
-    
-    public Map<String, String> getScopeContext();
-    
-    public void startScope(Map<String, String> contextMap);
 
     /**
      * Log error occurred on executing Request
