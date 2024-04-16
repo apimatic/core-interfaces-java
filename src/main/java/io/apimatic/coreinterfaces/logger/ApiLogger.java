@@ -11,29 +11,13 @@ public interface ApiLogger {
     /**
      * Log requests.
      * @param request HttpRequest to be logged.
-     * @param url String request URL.
+     * @param arraySerializationFormat Enumeration for all ArraySerialization formats.
      */
-    void logRequest(Request request, String url);
-
-    /**
-     * Log requests.
-     * @param request HttpRequest to be logged.
-     * @param url String request URL.
-     * @param additionalMessage Any additional message to be logged.
-     */
-    void logRequest(Request request, String url, String additionalMessage);
+    void logRequest(Request request);
 
     /**
      * Log Responses.
-     * @param request HttpRequest that completed.
      * @param response HttpResponse to be logged.
      */
-    void logResponse(Request request, Response response);
-
-    /**
-     * Log error occurred on executing Request
-     * @param request HttpRequest to be logged.
-     * @param error Throwable occurred
-     */
-    void logRequestError(Request request, String url, Throwable error);
+    void logResponse(Response response);
 }
