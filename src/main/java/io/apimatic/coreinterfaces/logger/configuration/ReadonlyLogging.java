@@ -1,8 +1,6 @@
 package io.apimatic.coreinterfaces.logger.configuration;
 
-import java.util.Set;
 import io.apimatic.coreinterfaces.http.LoggingLevel;
-import io.apimatic.coreinterfaces.http.LoggingPolicy;
 
 /**
  * To hold logging configuration
@@ -14,5 +12,15 @@ public interface ReadonlyLogging {
      */
     LoggingLevel getLevel();
     
-    boolean getEnableDefaultConsoleLogging();
+    /**
+     * Getter for ReadonlyRequestLogging
+     * @return ReadonlyRequestLogging
+     */
+    ReadonlyRequestLogging getRequestLogOptions();
+    
+    /**
+     * Getter for ReadonlyResponseLogging
+     * @return ReadonlyResponseLogging
+     */
+    ReadonlyResponseLogging getResponseLogOptions();
 }
