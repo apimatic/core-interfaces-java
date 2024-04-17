@@ -30,6 +30,13 @@ public interface Request {
     String getQueryUrl();
 
     /**
+     * Get the request URL
+     * @param arraySerializationFormat Array serialization format
+     * @return String Url
+     */
+    String getUrl(ArraySerializationFormat arraySerializationFormat);
+    
+    /**
      * Get the request URL without query parameters
      * @return String Url
      */

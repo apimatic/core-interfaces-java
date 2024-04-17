@@ -5,7 +5,7 @@ import io.apimatic.coreinterfaces.http.LoggingLevel;
 /**
  * Interface representing an object capable of logging messages at different levels.
  */
-public interface Loggable {
+public interface Logger {
     /**
      * Logs a message with the specified logging level, format, and arguments.
      *
