@@ -11,7 +11,6 @@ public interface ApiLogger {
     /**
      * Log requests.
      * @param request HttpRequest to be logged.
-     * @param arraySerializationFormat Enumeration for all ArraySerialization formats.
      */
     void logRequest(Request request);
 
