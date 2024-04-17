@@ -1,8 +1,8 @@
 package io.apimatic.coreinterfaces.logger.configuration;
 
 import org.slf4j.Logger;
+import org.slf4j.event.Level;
 
-import io.apimatic.coreinterfaces.http.LoggingLevel;
 
 /**
  * To hold logging configuration
@@ -18,7 +18,13 @@ public interface ReadonlyLogging {
      * Getter for level.
      * @return Level of logging.
      */
-    LoggingLevel getLevel();
+    Level getLevel();
+    
+    /**
+     * Getter for mask sensitive header
+     * @return boolean for mask sensitive header
+     */
+    boolean getMaskSensitiveHeaders();
     
     /**
      * Getter for ReadonlyRequestLogging
