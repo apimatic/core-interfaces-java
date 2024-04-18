@@ -8,7 +8,7 @@ import io.apimatic.coreinterfaces.logger.Logger;
 /**
  * To hold logging configuration
  */
-public interface ReadonlyLogging {
+public interface ReadonlyLoggingConfiguration {
 	/***
 	 * Getter for Logger
 	 * @return Logger Instance
@@ -23,7 +23,7 @@ public interface ReadonlyLogging {
     
     /**
      * Getter for mask sensitive header
-     * @return boolean for mask sensitive header
+     * @return True if masking of sensitive headers is enabled, otherwise false.
      */
     boolean getMaskSensitiveHeaders();
     
