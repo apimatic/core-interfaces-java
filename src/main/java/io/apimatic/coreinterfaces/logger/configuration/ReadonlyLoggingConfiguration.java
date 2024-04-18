@@ -31,11 +31,11 @@ public interface ReadonlyLoggingConfiguration {
      * Getter for ReadonlyRequestLogging
      * @return ReadonlyRequestLogging
      */
-    ReadonlyRequestLogging getRequestLogOptions();
+    ReadonlyRequestLogOptions getRequestLogOptions();
 
     /**
      * Getter for ReadonlyResponseLogging
      * @return ReadonlyResponseLogging
      */
-    ReadonlyResponseLogging getResponseLogOptions();
+    ReadonlyResponseLogOptions getResponseLogOptions();
 }
