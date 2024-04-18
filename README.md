@@ -35,8 +35,8 @@ Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-
 | [`Logger`](./src/main/java/io/apimatic/coreinterfaces/logger/Logger.java)                  | Interface for logging at different levels.              |
 | [`ReadonlyLoggingConfiguration`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyLoggingConfiguration.java)                  | To hold logging configuration              |
 | [`ReadonlyLogOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyLogOptions.java)                  | To hold base options for logging configuration              |
-| [`ReadonlyRequestLogging`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyRequestLogging.java)                  | To hold Request options for logging configuration              |
-| [`ReadonlyResponseLogging`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyResponseLogging.java)                  | To hold Response options for logging configuration              |
+| [`ReadonlyRequestLogOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyRequestLogOptions.java)                  | To hold Request options for logging configuration              |
+| [`ReadonlyResponseLogOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyResponseLogOptions.java)                  | To hold Response options for logging configuration              |
 | [`Deserializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Deserializer.java)                  | Functional interface to  apply the deserialization function           |
 | [`ExceptionCreator`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ExceptionCreator.java)                  | Functional interface to  create the SDK exception             |
 | [`Serializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Serializer.java)                  | Functional interface to  apply the serialization function              |

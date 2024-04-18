@@ -17,5 +17,5 @@ public interface Logger {
      * @param format    a format string for the message
      * @param arguments arguments referenced by the format string
      */
-    void log(Level level, String format, Map<String, Object> argumentsKvp);
+    void log(Level level, String format, Map<String, Object> arguments);
 }
