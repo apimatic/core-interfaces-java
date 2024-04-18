@@ -15,13 +15,13 @@ public interface ReadonlyLogOptions {
      * @return True if logging of request headers is enabled, otherwise false.
      */
     boolean shouldLogHeaders();
-    
+
     /**
      * Gets the list of headers to include in logging.
      * @return An unmodifiable list of headers to include.
      */
     public List<String> getHeadersToInclude();
-    
+
     /**
      * Gets the list of headers to exclude from logging.
      * @return An unmodifiable list of headers to exclude.

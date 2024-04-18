@@ -1,6 +1,6 @@
 package io.apimatic.coreinterfaces.logger.configuration;
 
 
-public interface ReadonlyResponseLogging extends ReadonlyLogOptions{
+public interface ReadonlyResponseLogging extends ReadonlyLogOptions {
 
 }

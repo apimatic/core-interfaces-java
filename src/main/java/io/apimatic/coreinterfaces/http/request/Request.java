@@ -35,7 +35,7 @@ public interface Request {
      * @return String Url
      */
     String getUrl(ArraySerializationFormat arraySerializationFormat);
-    
+
     /**
      * Get the request URL without query parameters
      * @return String Url
@@ -66,5 +66,4 @@ public interface Request {
      * @return Object body
      */
     Object getBody();
-
 }
