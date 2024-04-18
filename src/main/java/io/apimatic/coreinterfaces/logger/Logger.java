@@ -1,9 +1,12 @@
 package io.apimatic.coreinterfaces.logger;
 
+import java.util.Map;
+
 import org.slf4j.event.Level;
 
 /**
- * Interface representing an object capable of logging messages at different levels.
+ * Interface representing an object capable of logging messages at different
+ * levels.
  */
 public interface Logger {
 
@@ -14,5 +17,5 @@ public interface Logger {
      * @param format    a format string for the message
      * @param arguments arguments referenced by the format string
      */
-    void log(Level level, String format, Object... arguments);
+    void log(Level level, String format, Map<String, Object> argumentsKvp);
 }
