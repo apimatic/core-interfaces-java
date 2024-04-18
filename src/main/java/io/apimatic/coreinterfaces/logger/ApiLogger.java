@@ -10,14 +10,12 @@ public interface ApiLogger {
 
     /**
      * Log requests.
-     * 
      * @param request HttpRequest to be logged.
      */
     void logRequest(Request request);
 
     /**
      * Log Responses.
-     * 
      * @param response HttpResponse to be logged.
      */
     void logResponse(Response response);
