@@ -6,6 +6,7 @@ import org.slf4j.event.Level;
  * Interface representing an object capable of logging messages at different levels.
  */
 public interface Logger {
+
     /**
      * Logs a message with the specified logging level, format, and arguments.
      *

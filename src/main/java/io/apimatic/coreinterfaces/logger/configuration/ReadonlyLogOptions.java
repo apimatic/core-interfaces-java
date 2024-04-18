@@ -3,7 +3,8 @@ package io.apimatic.coreinterfaces.logger.configuration;
 import java.util.List;
 
 public interface ReadonlyLogOptions {
-	/**
+
+    /**
      * Checks if logging of request body is enabled.
      * @return True if logging of request body is enabled, otherwise false.
      */

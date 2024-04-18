@@ -9,12 +9,13 @@ import io.apimatic.coreinterfaces.logger.Logger;
  * To hold logging configuration
  */
 public interface ReadonlyLoggingConfiguration {
-	/***
-	 * Getter for Logger
-	 * @return Logger Instance
-	 */
-	Logger getLogger();
-	
+
+    /***
+     * Getter for Logger
+     * @return Logger Instance
+     */
+    Logger getLogger();
+    
     /**
      * Getter for level.
      * @return Level of logging.
