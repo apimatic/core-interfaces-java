@@ -20,7 +20,7 @@ public interface ReadonlyLogOptions {
      * Gets the list of headers to include in logging.
      * @return An unmodifiable list of headers to include.
      */
-    public List<String> getHeadersToInclude();
+    List<String> getHeadersToInclude();
 
     /**
      * Gets the list of headers to exclude from logging.
