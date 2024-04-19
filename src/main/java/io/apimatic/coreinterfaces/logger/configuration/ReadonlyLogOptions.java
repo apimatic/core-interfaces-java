@@ -29,9 +29,8 @@ public interface ReadonlyLogOptions {
     List<String> getHeadersToExclude();
 
     /**
-     * Retrieves the list of headers to whitelist from sensitive headers.
-     * These headers are excluded from masking.
-     * @return An unmodifiable list of headers to whitelist.
+     * Retrieves the list of headers to unmask from logging.
+     * @return An unmodifiable list of headers to unmask.
      */
-    List<String> getHeadersToWhiteList();
+    List<String> getHeadersToUnmask();
 }
