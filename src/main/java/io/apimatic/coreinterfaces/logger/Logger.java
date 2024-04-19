@@ -11,7 +11,7 @@ import org.slf4j.event.Level;
 public interface Logger {
 
     /**
-     * Return instance of {@link Logger
+     * Return instance of {@link Logger.
      * @return wrapped instance of SLF4J Logger.
      */
     org.slf4j.Logger getLogger();
