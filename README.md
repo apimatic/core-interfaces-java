@@ -33,10 +33,10 @@ Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-
 | [`HttpApiException`](./src/main/java/io/apimatic/coreinterfaces/type/HttpApiException.java)                  | Default interface for all the exception models in SDK              |
 | [`ApiLogger`](./src/main/java/io/apimatic/coreinterfaces/logger/ApiLogger.java)                  | Interface for Loggin Api Calls.              |
 | [`Logger`](./src/main/java/io/apimatic/coreinterfaces/logger/Logger.java)                  | Interface for logging at different levels.              |
-| [`ReadonlyLoggingConfiguration`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyLoggingConfiguration.java)                  | To hold logging configuration              |
-| [`ReadonlyLogOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyLogOptions.java)                  | To hold base options for logging configuration              |
-| [`ReadonlyRequestLogOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyRequestLogOptions.java)                  | To hold Request options for logging configuration              |
-| [`ReadonlyResponseLogOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ReadonlyResponseLogOptions.java)                  | To hold Response options for logging configuration              |
+| [`LoggingConfiguration`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/LoggingConfiguration.java)                  | To hold logging configuration              |
+| [`LoggingOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/LoggingOptions.java)                  | To hold base options for logging configuration              |
+| [`RequestLoggingOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/RequestLoggingOptions.java)                  | To hold Request options for logging configuration              |
+| [`ResponseLoggingOptions`](./src/main/java/io/apimatic/coreinterfaces/logger/configuration/ResponseLoggingOptions.java)                  | To hold Response options for logging configuration              |
 | [`Deserializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Deserializer.java)                  | Functional interface to  apply the deserialization function           |
 | [`ExceptionCreator`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ExceptionCreator.java)                  | Functional interface to  create the SDK exception             |
 | [`Serializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Serializer.java)                  | Functional interface to  apply the serialization function              |

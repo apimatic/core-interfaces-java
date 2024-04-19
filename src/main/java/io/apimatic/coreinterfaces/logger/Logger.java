@@ -11,6 +11,12 @@ import org.slf4j.event.Level;
 public interface Logger {
 
     /**
+     * Return instance of {@link Logger
+     * @return wrapped instance of SLF4J Logger.
+     */
+    org.slf4j.Logger getLogger();
+
+    /**
      * Logs a message with the specified logging level, format, and arguments.
      *
      * @param level     the logging level of the message
