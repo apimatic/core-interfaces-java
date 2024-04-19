@@ -7,7 +7,7 @@ import io.apimatic.coreinterfaces.logger.Logger;
 /**
  * To hold logging configuration
  */
-public interface ReadonlyLoggingConfiguration {
+public interface LoggingConfiguration {
 
     /***
      * Getter for Logger
@@ -31,11 +31,11 @@ public interface ReadonlyLoggingConfiguration {
      * Getter for ReadonlyRequestLogging
      * @return ReadonlyRequestLogging
      */
-    ReadonlyRequestLogOptions getRequestLogOptions();
+    RequestLoggingOptions getRequestLogOptions();
 
     /**
      * Getter for ReadonlyResponseLogging
      * @return ReadonlyResponseLogging
      */
-    ReadonlyResponseLogOptions getResponseLogOptions();
+    ResponseLoggingOptions getResponseLogOptions();
 }

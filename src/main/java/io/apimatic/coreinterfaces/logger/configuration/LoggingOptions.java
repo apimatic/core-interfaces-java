@@ -2,7 +2,7 @@ package io.apimatic.coreinterfaces.logger.configuration;
 
 import java.util.List;
 
-public interface ReadonlyLogOptions {
+public interface LoggingOptions {
 
     /**
      * Checks if logging of request body is enabled.
