@@ -1,6 +1,6 @@
 package io.apimatic.coreinterfaces.logger.configuration;
 
-public interface RequestLoggingOptions extends LoggingOptions {
+public interface RequestLoggingConfiguration extends HttpLoggingConfiguration {
 
     /**
      * Checks if logging of query parameters is required

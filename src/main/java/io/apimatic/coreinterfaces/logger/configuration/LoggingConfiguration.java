@@ -28,14 +28,14 @@ public interface LoggingConfiguration {
     boolean getMaskSensitiveHeaders();
 
     /**
-     * Getter for ReadonlyRequestLogging
-     * @return ReadonlyRequestLogging
+     * Getter for RequestLoggingConfiguration
+     * @return RequestLoggingConfiguration
      */
-    RequestLoggingOptions getRequestLogOptions();
+    RequestLoggingConfiguration getRequestConfig();
 
     /**
-     * Getter for ReadonlyResponseLogging
-     * @return ReadonlyResponseLogging
+     * Getter for ResponseLoggingConfiguration
+     * @return ResponseLoggingConfiguration
      */
-    ResponseLoggingOptions getResponseLogOptions();
+    ResponseLoggingConfiguration getResponseConfig();
 }
