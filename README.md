@@ -67,7 +67,7 @@ Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-
 
 [maven-badge]: https://img.shields.io/maven-central/v/io.apimatic/core-interfaces?color=green
 
-[maven-url]: https://central.sonatype.dev/artifact/io.apimatic/core-interfaces/0.1.1
+[maven-url]: https://central.sonatype.com/artifact/io.apimatic/core-interfaces
 
 [test-badge]: https://github.com/apimatic/core-interfaces-java/actions/workflows/build-and-test.yml/badge.svg
 
