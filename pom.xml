@@ -7,7 +7,7 @@
 
 	<groupId>io.apimatic</groupId>
 	<artifactId>core-interfaces</artifactId>
-	<version>0.3.1</version>
+	<version>0.3.2</version>
 
 	<name>core-interfaces</name>
 	<description>An abstract layer of the functionalities provided by apimatic-core-library, okhttp-client-adapter and APIMatic SDKs.</description>
@@ -33,17 +33,6 @@
 		<developerConnection>scm:git:ssh://github.com/apimatic/core-interfaces-java.git</developerConnection>
 		<url>https://github.com/apimatic/core-interfaces-java</url>
 	</scm>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -129,16 +118,17 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+		        	<groupId>org.sonatype.central</groupId>
+		            	<artifactId>central-publishing-maven-plugin</artifactId>
+		            	<version>0.8.0</version>
+		            	<extensions>true</extensions>
+		        	<configuration>
+			              	<publishingServerId>ossrh</publishingServerId>
+			              	<tokenAuth>true</tokenAuth>
+			              	<autoPublish>true</autoPublish>
+			              	<waitUntil>published</waitUntil>
 				</configuration>
-			</plugin>
+		        </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
