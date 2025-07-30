@@ -3,7 +3,8 @@
 [![Maven Central][maven-badge]][maven-url]
 [![Tests][test-badge]][test-url]
 [![Lint Code][lint-badge]][lint-url]
-[![Maintainability][maintainability-url]][code-climate-url]
+[![Maintainability Rating][maintainability-badge]][maintainability-url]
+[![Vulnerabilities][vulnerabilities-badge]][vulnerabilities-url]
 [![Licence][license-badge]][license-url]
 
 ## Introduction
@@ -73,9 +74,13 @@ Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-
 
 [test-url]: https://github.com/apimatic/core-interfaces-java/actions/workflows/build-and-test.yml
 
-[code-climate-url]: https://codeclimate.com/github/apimatic/core-interfaces-java
+[maintainability-badge]: https://sonarcloud.io/api/project_badges/measure?project=apimatic_core-interfaces-java&metric=sqale_rating
 
-[maintainability-url]: https://api.codeclimate.com/v1/badges/71332f9af318d309c3dc/maintainability
+[maintainability-url]: https://sonarcloud.io/summary/new_code?id=apimatic_core-interfaces-java
+
+[vulnerabilities-badge]: https://sonarcloud.io/api/project_badges/measure?project=apimatic_core-interfaces-java&metric=vulnerabilities
+
+[vulnerabilities-url]: https://sonarcloud.io/summary/new_code?id=apimatic_core-interfaces-java
 
 [lint-badge]: https://github.com/apimatic/core-interfaces-java/actions/workflows/linter.yml/badge.svg
 
