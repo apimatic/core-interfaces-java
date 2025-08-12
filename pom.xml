@@ -127,6 +127,7 @@
 			              	<tokenAuth>true</tokenAuth>
 			              	<autoPublish>true</autoPublish>
 			              	<waitUntil>published</waitUntil>
+							<deploymentName>APIMatic Core Interfaces</deploymentName>
 				</configuration>
 		        </plugin>
 			<plugin>
