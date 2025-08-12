@@ -1,5 +1,6 @@
 package io.apimatic.coreinterfaces.http;
 
+import io.apimatic.coreinterfaces.http.proxy.ProxyConfiguration;
 import java.util.Set;
 
 /**
@@ -73,4 +74,12 @@ public interface ClientConfiguration {
      * @return a copy of skipSslCertVerification
      */
     boolean skipSslCertVerification();
+
+    /**
+     * Retrieves the proxy configuration containing the address, port, and optional credentials
+     * used to connect through a proxy server.
+     *
+     * @return the {@link ProxyConfiguration} instance if no proxy is configured
+     */
+    ProxyConfiguration getProxyConfiguration();
 }
