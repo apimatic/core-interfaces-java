@@ -30,7 +30,17 @@ public interface VerificationResult {
      * @return a success result
      */
     static VerificationResult success() {
-        return DefaultImpl.SUCCESS;
+        return new VerificationResult() {
+            @Override
+            public boolean isSuccess() {
+                return true;
+            }
+
+            @Override
+            public List<String> getErrors() {
+                return Collections.emptyList();
+            }
+        };
     }
 
     /**
@@ -40,37 +50,17 @@ public interface VerificationResult {
      * @return a failure result
      */
     static VerificationResult failure(String... errors) {
-        return new DefaultImpl(errors);
-    }
+        return new VerificationResult() {
+            @Override
+            public boolean isSuccess() {
+                return errors == null;
+            }
 
-    /**
-     * Default hidden implementation inside the interface.
-     */
-    class DefaultImpl implements VerificationResult {
-        private static final VerificationResult SUCCESS = new DefaultImpl();
-
-        private final List<String> errors;
-
-        private DefaultImpl(String... errors) {
-            this.errors = Collections.unmodifiableList(errors != null ?
-                    Arrays.asList(errors) : Collections.emptyList());
-        }
-
-        @Override
-        public boolean isSuccess() {
-            return errors.isEmpty();
-        }
-
-        @Override
-        public List<String> getErrors() {
-            return errors;
-        }
-
-        @Override
-        public String toString() {
-            return isSuccess()
-                    ? "VerificationResult{success}"
-                    : "VerificationResult{errors=" + errors + "}";
-        }
+            @Override
+            public List<String> getErrors() {
+                return Collections.unmodifiableList(errors != null
+                        ? Arrays.asList(errors) : Collections.emptyList());
+            }
+        };
     }
 }
