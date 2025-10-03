@@ -50,6 +50,8 @@ Core Interfaces's Maven group ID is `io.apimatic`, and its artifact ID is `core-
 | [`ExceptionCreator`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ExceptionCreator.java)                              | Functional interface to  create the SDK exception                                      |
 | [`Serializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/Serializer.java)                                          | Functional interface to  apply the serialization function                              |
 | [`ContextInitializer`](./src/main/java/io/apimatic/coreinterfaces/type/functional/ContextInitializer.java)                          | Functional Interface to apply the context initialization function for the response models |
+| [`SignatureVerifier`](./src/main/java/io/apimatic/coreinterfaces/security/SignatureVerifier.java)                                          | Defines a contract for verifying the signature of an HTTP request                              |
+| [`VerificationResult`](./src/main/java/io/apimatic/coreinterfaces/security/VerificationResult.java)                          | Represents the result of an operation that can either succeed or fail with an error message |
 
 ## Enumerations
 
