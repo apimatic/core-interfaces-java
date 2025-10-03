@@ -53,7 +53,7 @@ public interface VerificationResult {
         return new VerificationResult() {
             @Override
             public boolean isSuccess() {
-                return errors == null;
+                return false;
             }
 
             @Override
